@@ -1,0 +1,21 @@
+﻿{
+  "items": [
+    { "id": 1, "title": "Task 1 - Picked", "status": "completed", "description": "AGV-001 completed pickup at Warehouse A", "location": "Warehouse A", "priority": "high" },
+    { "id": 2, "title": "Task 2 - In Transit", "status": "in_progress", "description": "AGV-002 transporting goods to Zone B", "location": "Zone B", "priority": "medium" },
+    { "id": 3, "title": "Task 3 - Scheduled", "status": "pending", "description": "AGV-003 scheduled for delivery to Zone C", "location": "Zone C", "priority": "low" },
+    { "id": 4, "title": "Task 4 - Maintenance", "status": "maintenance", "description": "AGV-004 requires maintenance check", "location": "Service Bay", "priority": "high" },
+    { "id": 5, "title": "Task 5 - Delivered", "status": "completed", "description": "AGV-005 completed delivery to Zone D", "location": "Zone D", "priority": "medium" }
+  ],
+  "history": [
+    { "id": 1, "itemId": 1, "event": "created", "at": "2025-01-15T10:00:00Z", "description": "Task created and assigned to AGV-001" },
+    { "id": 2, "itemId": 1, "event": "started", "at": "2025-01-15T10:15:00Z", "description": "AGV-001 started pickup operation" },
+    { "id": 3, "itemId": 1, "event": "completed", "at": "2025-01-15T10:45:00Z", "description": "Pickup operation completed successfully" },
+    { "id": 4, "itemId": 2, "event": "created", "at": "2025-01-15T11:00:00Z", "description": "Task created and assigned to AGV-002" },
+    { "id": 5, "itemId": 2, "event": "started", "at": "2025-01-15T11:15:00Z", "description": "AGV-002 started transport operation" },
+    { "id": 6, "itemId": 3, "event": "created", "at": "2025-01-15T12:00:00Z", "description": "Task scheduled for AGV-003" },
+    { "id": 7, "itemId": 4, "event": "created", "at": "2025-01-15T13:00:00Z", "description": "Maintenance task created for AGV-004" },
+    { "id": 8, "itemId": 4, "event": "maintenance_started", "at": "2025-01-15T13:30:00Z", "description": "Maintenance operation started" },
+    { "id": 9, "itemId": 5, "event": "created", "at": "2025-01-15T14:00:00Z", "description": "Task created and assigned to AGV-005" },
+    { "id": 10, "itemId": 5, "event": "completed", "at": "2025-01-15T14:30:00Z", "description": "Delivery operation completed successfully" }
+  ]
+}
