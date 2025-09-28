@@ -1,0 +1,27 @@
+﻿spring:
+  application:
+    name: backend
+  datasource:
+    url: jdbc:mysql://localhost:3306/app_login
+    username: root
+    password: 
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+  security:
+    user:
+      name: admin
+      password: admin
+
+server:
+  port: 8081
+
+app:
+  jwt:
+    secret: "dev-secret-key-sprint2-app-2025-local-tests"
+    expiration: 3600000
